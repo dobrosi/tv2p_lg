@@ -1,0 +1,6 @@
+<div class="row-title">{{ siteRow.title }}</div>
+<div class="button-row">
+  <button *ngFor="let siteItem of siteRow.siteItems">
+    <app-griditem [siteItem]="siteItem"></app-griditem>
+  </button>
+</div>
