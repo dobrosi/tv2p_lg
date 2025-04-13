@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GridlineComponent } from './gridline.component';
+import { GridItemComponent } from './grid-item.component';
 
-describe('GridlineComponent', () => {
-  let component: GridlineComponent;
-  let fixture: ComponentFixture<GridlineComponent>;
+describe('GriditemComponent', () => {
+  let component: GridItemComponent;
+  let fixture: ComponentFixture<GridItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GridlineComponent]
+      imports: [GridItemComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(GridlineComponent);
+
+    fixture = TestBed.createComponent(GridItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

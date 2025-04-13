@@ -5,9 +5,17 @@ import {SiteItem} from "../interface/siteitem";
   selector: 'app-griditem',
   standalone: true,
   imports: [],
-  templateUrl: './griditem.component.html',
-  styleUrl: './griditem.component.css'
+  templateUrl: './grid-item.component.html',
+  styleUrl: './grid-item.component.css'
 })
-export class GriditemComponent {
+export class GridItemComponent {
   @Input() siteItem!: SiteItem;
+
+  select() {
+    console.log(this.siteItem)
+  }
+
+  unselect() {
+
+  }
 }
